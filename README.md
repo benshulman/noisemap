@@ -1,11 +1,14 @@
 # NoiseMap
-This project predicts noise levels at different times of day around Boston, MA. I deployed these predictions as an interactive app, where you can see a map of noise estimates at different times of day and on weekdays and weekends, and search for the quietest park within 2 miles. A screen shot of the map is shown below.
-[The web-app can be found here](http://noisemap.me/)
+Finding peace and quiet in a big city is challenging.
+I developped a model of noise levels around Boston, MA, to help people find quieter places in the city.
+I built this project in three weeks as part of the [Insight Data Science fellowship](http://insightdatascience.com/), a program that helps PhDs transition from academia to careers in data science.
+I deployed my noise-level predictions as an interactive app, where you can see a map of noise estimates at different times of day and on weekdays and weekends, and search for the quietest park within 2 miles. A screen shot of the map is shown below.
+You can view the app at [noisemap.me](http://noisemap.me/).
 
 <img src="./git-figures/readme-screenshot.png" height="500">
 
 ## Overview
-I used data from two different citizen-science smartphone apps, [NoiseTube](http://www.noisetube.net/), and [NoiseScore](http://noisescore.com). The NoiseTube data is publicly available through an [API](http://www.noisetube.net/api_overview). The NoiseScore data was shared with me by [Dr. Erica Walker](http://noiseandthecity.org/erica-walker/), who leads the development of the NoiseScore app. You can read more about her work at [Noise and the City](http://noiseandthecity.org). The map below shows the spread of noise-observations over the city. These data provide good coverage, but there are still many areas for which we do not have noise-level information.
+I used data from two different citizen-science smartphone apps, [NoiseScore](http://noisescore.com), and [NoiseTube](http://www.noisetube.net/). The NoiseScore data was shared with me by [Dr. Erica Walker](http://noiseandthecity.org/erica-walker/), who leads the development of the NoiseScore app. You can read more about her work at [Noise and the City](http://noiseandthecity.org). The NoiseTube data is publicly available through an [API](http://www.noisetube.net/api_overview). The map below shows the spread of noise-observations over the city. These data provide good coverage, but there are still many areas for which we do not have noise-level information.
 
 <img src="./git-figures/noise-spread.png" height="500">
 
@@ -17,7 +20,7 @@ Using these data, I developed a random-forest regressor model to predict noise l
 - Trains, subways & buses,
 - Restaurants & bars.
 
-I then used this model to generate predictions for the rest of the map, at different times of day. I deployed these predictions as a web app, using Dash. Using the app, you can see a map of noise estimates at different times of day and on weekdays and weekends, and search for the quietest park within 2 miles.
+I then used this model to generate predictions for the rest of the map, at different times of day. I deployed these predictions as a web app, using Dash. Using the app, you can see a map of noise estimates at different times of day and on weekdays and weekends, and search for the quietest park within 2 miles. You can view the app at [noisemap.me](http://noisemap.me/).
 
 ## Structure
 This repository contains the data, scripts used for data scraping and processing, feature engineering, modeling, and the code for the web-app. The structure of the repository is as follows:
@@ -32,4 +35,4 @@ This repository contains the data, scripts used for data scraping and processing
 
 5. Git Figures - figures used in this ReadMe.
 
-The NoiseScore data are not currently public, so at present these data are not shared in this repository.
+The NoiseScore data are not currently public, so at present these data, and the combined noise-tube and noise-score data, are not shared in this repository.
