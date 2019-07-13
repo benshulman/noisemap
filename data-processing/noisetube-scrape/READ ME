@@ -1,0 +1,7 @@
+READ ME
+
+get_noise.py pulls NoiseTube data for each city, and saves files as cityname-noise-tube.csv.
+
+noise_clean.py removes missing values and averages across redundant observations. This saves noise-tube-clean.csv.
+
+noise_tube_box.py keeps only cleaned observations within a reasonable bounding box. Some observations where way out in the middle of nowhere. I determined a bounding box in eda-nt-clean.ipynb. This saves noise-tube-boxed.csv.
