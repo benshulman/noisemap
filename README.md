@@ -35,4 +35,4 @@ This repository contains the data, scripts used for data scraping and processing
 
 5. Git Figures - figures used in this ReadMe.
 
-The NoiseScore data are not currently public, so at present these data, and the combined noise-tube and noise-score data, are not shared in this repository.
+The NoiseScore data are not currently public, so at present these data, and the combined Noise-Tube and Noise-Score data, are not shared in this repository.
